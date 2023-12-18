@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "报bug助手",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "images/icon48.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "webRequest",
+    "storage"
+    
+  ],
+
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [{
+    "resources": ["injected.js"],
+    "matches": [
+    "*://*.iqihang.com/*"
+  ]
+  }],
+
+  "host_permissions": [
+    "*://*.iqihang.com/*"
+  ]
+}

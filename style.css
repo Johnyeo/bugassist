@@ -1,0 +1,85 @@
+.top-banner {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.copy-btn {
+    color: white;
+    background-color: lightslategray;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clear-btn {
+    color: crimson;
+    background-color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+}
+
+.request-list {
+    list-style-type: none;
+    padding: 0;
+    max-height: 900px;
+    width: 600px;
+}
+
+.request-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.url-text {
+    width: 100%;
+    justify-items: center;
+    padding: 4px;
+}
+
+.method-tag-get {
+    padding: 5px;
+    border-radius: 5px;
+    width: 32px; /* 调整为需要的宽度 */
+    background-color: greenyellow;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.method-tag-post {
+    padding: 5px;
+    border-radius: 5px;
+    width: 35px; /* 调整为需要的宽度 */
+    background-color: lightseagreen;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.method-tag-delete {
+    padding: 5px;
+    border-radius: 5px;
+    width: 48px; /* 调整为需要的宽度 */
+    background-color: orange;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.method-tag-other {
+    padding: 5px;
+    border-radius: 5px;
+    width: 35px; /* 调整为需要的宽度 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
